@@ -88,6 +88,9 @@ edge servers, that implements our re-usable A/B-Test script.
 
 ### References
 [1] https://www.cloudflare.com/products/cloudflare-workers/
+
 [2] https://developers.cloudflare.com/workers/archive/recipes/a-b-testing/
+
 [3] https://community.cloudflare.com/t/chaining-multiple-workers-on-enterprise-plan/83859/4
+
 [4] https://developers.cloudflare.com/workers/archive/writing-workers/using-npm-modules/
