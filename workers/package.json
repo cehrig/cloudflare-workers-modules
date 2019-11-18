@@ -1,0 +1,19 @@
+{
+  "name": "cf-worker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "homepage-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack homepage-worker.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mod-ab-test": "file:../modules/mod-ab-test"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
