@@ -7,7 +7,7 @@ a multi-page web-application.
 
 Cloudflare Workers is a powerful tool, that lets you execute Javascript code at the edge server of Cloudflare.[1] This is 
 extremely helpful when you have to 
-- alter a client's request - by modifying the Request Object - before it it passed to your 
+- alter a client's request - by modifying the Request Object - before it is passed to your 
 web-application
 - alter your web-application's response - by modifying the Response Object - before it is sent back to 
 your clients.
@@ -15,9 +15,10 @@ your clients.
 One common use-case for such a Worker-Script is the implementation of an A/B-Test.[2] An A/B-Test is used when you want to
 see how a modified version of your page (B-version) - for example a new layout of your web-application's header - performs, 
 compared to your existing one (A-version). While it is possible to implement the business logic for such an A/B-Test in
-your origin web-application, you usually have to redeploy the whole web-application when you want to change it's
+your origin web-application, you usually have to redeploy the entire web-application when you want to change it's
 configuration. Depending on the complexity of your application, this can take a lot of time (minutes sometimes matter) 
 and you want to shut-down the new version very quickly (because it causes issues in regard to your conversion rate, ...).
+
 With Cloudflare Workers we can 
 - encapsulate the whole logic for the A/B-Test at Cloudflare's edge servers
 - redeploy a new configuration within seconds and independently from your web-application
@@ -47,7 +48,7 @@ how to write and use a custom/local npm module with a Workers script.
 
 I am not going into the details how to use npm modules and webpack with Cloudflare Workers, because this is covered by 
 Cloudflare docs.[4] Instead, I'm explaining how the code is structured, to give you some inspiration how to encapsulate and
-re-use business logic with Workers.
+reuse business logic with Workers.
 
 ### `modules/`
 
