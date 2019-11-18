@@ -1,11 +1,11 @@
 addEventListener('fetch', event => {
-    event.respondWith(sendDate(event.request))
+    event.respondWith(processHomepage(event.request))
 });
 
 // We are re-using the AB-Test Module for this worker
 const _mod_ab_test = require("mod-ab-test");
 
-async function sendDate(request) {
+async function processHomepage(request) {
     let response;
 
     // 1) We are going to setup our AB-Test, by setting the B-Group Size to 30% and defining a cookie called Testgroup
