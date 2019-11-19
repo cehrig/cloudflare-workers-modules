@@ -80,7 +80,7 @@ execute three simple commands:
 ```
 cd workers
 npm install
-npm run build
+npm run build homepage-worker.js
 ```
 
 The last command builds the Workers script and stores it to `workers/dist/main.js`. We can now deploy this script to Cloudflare

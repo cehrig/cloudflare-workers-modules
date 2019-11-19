@@ -5,12 +5,13 @@
   "main": "homepage-worker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack homepage-worker.js"
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mod-ab-test": "file:../modules/mod-ab-test"
+    "mod-ab-test": "file:../modules/mod-ab-test",
+    "mod-hdr-override": "file:../modules/mod-hdr-override"
   },
   "devDependencies": {
     "webpack": "^4.41.2",
